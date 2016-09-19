@@ -11,6 +11,13 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'client-bundle.js'
   },
+  resolve: {
+    alias: {
+      // nessessary to make "import Vue from 'vue'" load the standalone version.
+      'vue': 'vue/dist/vue',
+      'components': path.resolve(__dirname, '../src/components')
+    }
+  },
   resolveLoader: {
     root: path.join(__dirname, '../node_modules'),
   },
@@ -24,6 +31,10 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel',
         exclude: /node_modules/
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css?sourceMap', 'sass?sourceMap']
       },
       {
         test: /\.(png|jpg|gif|svg)$/,

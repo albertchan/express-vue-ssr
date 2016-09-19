@@ -1,5 +1,6 @@
 import Vue from 'vue'
-import App from './App.vue'
+// import App from './App.vue'
+import App from './containers/App'
 import store from './store'
 import router from './router'
 import { sync } from 'vuex-router-sync'
@@ -20,7 +21,7 @@ Object.keys(filters).forEach(key => {
 const app = new Vue({
   router,
   store,
-  ...App // Object spread copying everything from App.vue
+  ...App
 })
 
 // expose the app, the router and the store.

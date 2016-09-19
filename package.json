@@ -1,7 +1,7 @@
 {
-  "name": "vue-hackernews-2.0",
+  "name": "express-vue-ssr",
   "description": "A Vue.js project",
-  "author": "Evan You <yyx990803@gmail.com>",
+  "author": "Albert Chan <atfchan@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node server",
@@ -33,8 +33,11 @@
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^2.0.0-beta.3",
     "file-loader": "^0.8.4",
+    "node-sass": "~3.10.0",
+    "sass-loader": "~4.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.1.2",
+    "style-loader": "~0.13.0",
     "url-loader": "^0.5.7",
     "vue-loader": "^9.2.2",
     "webpack": "^2.1.0-beta.20",
